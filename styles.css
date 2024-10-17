@@ -36,7 +36,8 @@ body{
     justify-content: space-between;
     padding: 40px;
     cursor: default;
-    position: relative;
+    position: fixed;
+    z-index: 3;
 }
 
 .menu-containerImg{
@@ -72,7 +73,7 @@ body{
 
 .menu-buttons:hover{
     cursor: pointer;
-    transition-duration: .2s;
+    transition-duration: .4s;
     color: var(--color-principal);
 }
 
@@ -80,7 +81,7 @@ body{
 
 .home{
     width: 100%;
-    height: 80vh;
+    height: 94vh;
 
     display: flex;
     flex-direction: column;
@@ -102,7 +103,7 @@ body{
     padding: 10px;
     border-end-end-radius: 5px;
     border-start-end-radius: 5px;
-    transform: translateY(-40%);
+    transform: translateY(-20%);
     box-shadow: 2px 2px 22px -12px rgba(0, 0, 0, 1);
 
 }
@@ -128,6 +129,7 @@ body{
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
+    margin-top: 100px;
 }
 
 .home p{
@@ -144,7 +146,7 @@ body{
     text-transform: uppercase;
     width: 15%;
     height: 55px;
-    border-radius: 10px;
+    border-radius: 6px;
     border: none;
     box-shadow: 0px 0px 150px 10px rgba(0, 0, 0, 0.35);
     font-size: 1rem;
@@ -155,4 +157,101 @@ body{
     cursor: pointer;
     transition-duration: .2s;
     transform: translateY(-3px);
+}
+
+/* ESTILOS PARA EL SOBRE MI */
+
+.about-me{
+    height: 90vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.about-me-header h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-me-header span {
+    width: 25px;
+    height: 5px;
+    border-radius: 40px;
+    color: transparent;
+    margin-top: 10px;
+    background-color: #ff2525;
+}
+
+.about-me-header p {
+    width: 70%;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    color: #555;
+    margin-top: 30px;
+}
+
+.about-me main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 240px;
+}
+
+.about-me main aside {
+    width: 50%; 
+    height: 100%;
+}
+
+.about-me main aside h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.know-me p{
+    margin-top: 30px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    font-size: .9rem;
+}
+
+.know-me p b {
+    color: #555;
+}
+
+.skills-container{
+    margin-left: 100px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.skill{
+    margin-left: 1rem;
+    margin-top: .8rem;
+    border-radius: 8px;
+    background-color: rgba(153,153,153,0.2);
+    color: #666;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: default;
 }
